@@ -7,18 +7,25 @@
         <link rel = "stylesheet" href="style.css">
     </head>
     <body>
-
-<!-- ------------------------------------------------ -->
+<!----------------------------------the login box--------------------------------------------->
+        <div class='hack'>
+            <form>
+                <textarea id="textBox" rows='1' cols='15'>
+                </textarea>
+            </form>
+            <input type="button" value="Login" id="loginBtn" onclick="loginFunc()">
+            <input type="button" value="hack" id="hackBtn" onclick="hack()">
+            <form>
+                <textarea id='accessBox' rows='1' cols='15'>
+                </textarea>
+            </form>
+        </div>
+<!-------------------------------------the password generator------------------------------------------>
         <form>
-            <textarea id="textBox" rows='1' cols='15'>
+            <textarea id='passBox' rows='1' cols='15'>
             </textarea>
         </form>
-        <input type="button" value="Login" id="loginBtn" onclick="loginFunc()">
-<!-- ------------------------------------------------ -->
-        <div>
-            <textarea id='accessBox' rows='1' cols='15'></textarea>
-        </div>
-
+        <input type="button" value="Generate Password" id="genBtn" onclick="gen()">
 
         <script src="script.js"></script>
     </body>
