@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password security</title>
+    <link rel = "stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<!----------------------------------the login box--------------------------------------------->
+    <div class="contentWrapper">
+        <div class='hack'>
+            <form>
+                <textarea id="textBox" rows='1' cols='15'>
+                </textarea>
+            </form>
+            <input type="button" value="Login" onclick="loginFunc()">
+            <input type="button" value="hack" onclick="hack()">
+            <form>
+                <textarea id='accessBox' rows='1' cols='15'>
+                </textarea>
+            </form>
+        </div>
+    <!-------------------------------------the password generator------------------------------------------>
+        <div class="gen">  
+            <form>
+                <textarea id='passBox' rows='1' cols='15'>
+                </textarea>
+            </form>
+            <input type="button" value="Generate Password" onclick="gen()">
+        </div>
+    </div>
+
+</body>
+</html>
